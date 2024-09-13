@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Form</title>
+   <link rel="stylesheet" href="/register.css">
+</head>
+<body>
+
+<!-- Image above the container, starts right at the container -->
+<div class="form-image">
+    <img src="/public/images/Header.PNG" alt="Airline Logo">
+</div>
+
+<div class="form-container">
+    <form id="flightForm" action="" method="POST">
+        <!-- Passenger Information -->
+        <div class="row">
+            <div class="column">
+                <h3 class="form-section-title">Passenger Information</h3>
+                <div class="form-group">
+                    <label for="fullName" class="required">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender" class="required">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">--Select--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dob" class="required">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="nationality" class="required">Nationality</label>
+                    <input type="text" id="nationality" name="nationality" required>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="column">
+                <h3 class="form-section-title">Contact Information</h3>
+                <div class="form-group">
+                    <label for="phone" class="required">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="required">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="poBox">P.O. Box Address</label>
+                    <input type="text" id="poBox" name="poBox">
+                </div>
+                <div class="form-group">
+                    <label for="emergencyPhone" class="required">Emergency Phone Number</label>
+                    <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+                </div>
+            </div>
+
+            <!-- Flight Information -->
+            <div class="column">
+                <h3 class="form-section-title">Flight Information</h3>
+                <div class="form-group">
+                    <label for="passport" class="required">Passport Number</label>
+                    <input type="text" id="passport" name="passport" required>
+                </div>
+                <div class="form-group">
+                    <label for="visa" class="required">Attach File</label>
+                    <input type="file" id="visa" name="visa" >
+                </div>                
+                <div class="form-group">
+                    <label for="departureCity" class="required">Departure City</label>
+                    <input type="text" id="departureCity" name="departureCity" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination" class="required">Destination</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Submit button outside the container and aligned with the form -->
+<div class="submit-btn">
+    <input type="submit" value="Submit">
+</div>
+
+</body>
+</html>
